@@ -25,8 +25,13 @@ Prior to developing a full 3D prototype, they have commissioned you to develop a
 
 The following definitions refer to Figure 1:
 
-$$ \begin{array}{l}  \textrm{CG}=\textrm{center}\textrm{of}\;\textrm{gravity}\;\textrm{of}\;\textrm{the}\;\textrm{system}\;\textrm{with}\;\textrm{the}\;\textrm{current}\;\textrm{payload}\;\textrm{position}\\ O=\textrm{origin}\;\textrm{of}\;\textrm{the}\;\textrm{world}\;\textrm{coordinate}\;\textrm{system}\\ x\left(t\right)=\textrm{horizontal}\;\textrm{position}\;\left\lbrack m\right\rbrack \;\textrm{of}\;\textrm{the}\;\textrm{CG}\;\textrm{in}\;\textrm{the}\;\textrm{world}\;\textrm{coordinate}\;\textrm{system}\\ y\left(t\right)=\textrm{vertical}\;\textrm{position}\;\left\lbrack m\right\rbrack \;\textrm{of}\;\textrm{the}\;\textrm{CG}\;\textrm{in}\;\textrm{the}\;\textrm{world}\;\textrm{coordinate}\;\textrm{system}\\ \theta \left(t\right)=\textrm{angular}\;\textrm{rotation}\;\left\lbrack \textrm{rad}\right\rbrack \;\textrm{of}\;\textrm{the}\;\textrm{open}-\textrm{top}\;\textrm{bin}\\ F_1 \left(t\right)=\textrm{bipolar}\;\textrm{control}\;\textrm{thrust}\;\textrm{force}\;\left\lbrack N\right\rbrack \;\textrm{at}\;\textrm{the}\;\textrm{front}\;\textrm{of}\;\textrm{the}\;\textrm{bin}\\ F_2 \left(t\right)=\textrm{bipolar}\;\textrm{control}\;\textrm{thrust}\;\textrm{force}\;\left\lbrack N\right\rbrack \;\textrm{at}\;\textrm{the}\;\textrm{rear}\;\textrm{of}\;\textrm{the}\;\textrm{bin} 
-\end{array} $$
+- CG: Center of gravity of the system with the current payload position
+- O: Origin of the world coordinate system
+- x(t): Horizontal position [m] of the CG in the world coordinate system
+- y(t): Vertical position [m] of the CG in the world coordinate system
+- θ(t): Angular rotation [rad] of the open-top bin
+- F₁(t): Bipolar control thrust force [N] at the front of the bin
+- F₂(t): Bipolar control thrust force [N] at the rear of the bin
 
 The equations of motion for this system are non-linear; however, the following linearized equations are a reasonable approximation for the purposes of this project:
 
@@ -36,7 +41,16 @@ The equations of motion for this system are non-linear; however, the following l
 
 The parameters associated with these dynamic equations are defined as:
 
-         $$ \begin{array}{l} g=\textrm{gravity}\;\left\lbrack \frac{m}{s^2 }\right\rbrack \\ M=\textrm{total}\;\textrm{mass}\;\left\lbrack \textrm{kg}\right\rbrack \;\textrm{of}\;\textrm{the}\;\textrm{system}\;\textrm{with}\;\textrm{payload}\\ J=\textrm{total}\;\textrm{rotational}\;\textrm{moment}\;\textrm{of}\;\textrm{inertia}\;\left\lbrack \textrm{kg}\cdot m^2 \right\rbrack \;\textrm{about}\;\textrm{the}\;\textrm{CG}\;\textrm{of}\;\textrm{the}\;\textrm{system}\;\textrm{with}\;\textrm{payload}\\ \alpha =\textrm{vertical}\;\textrm{aerodynamic}\;\textrm{damping}\;\textrm{coefficient}\;\;\left\lbrack \frac{N\cdot s}{\;m}\right\rbrack \\ \beta =\textrm{rotational}\;\textrm{aerodynamic}\;\textrm{damping}\;\textrm{coefficient}\;\left(\frac{N\cdot m\cdot s}{\textrm{rad}}\right)\\ \gamma =\textrm{horizontal}\;\textrm{aerodynamic}\;\textrm{damping}\;\textrm{coefficient}\;\left(\frac{N\cdot s}{m}\right)\\ d_1 =\textrm{distance}\;\left\lbrack m\right\rbrack \;\textrm{from}\;\textrm{the}\;\textrm{CG}\;\textrm{to}\;\textrm{the}\;\textrm{front}\;\textrm{control}\;\textrm{thrust}\\ d_2 =\textrm{distance}\;\left\lbrack m\right\rbrack \;\textrm{from}\;\textrm{the}\;\textrm{CG}\;\textrm{to}\;\textrm{the}\;\textrm{rear}\;\textrm{control}\;\textrm{thrust} \end{array} $$ \# Problem 1. Equilibrium Thrust Forces
+- g: Gravity [m/s²]
+- M: Total mass [kg] of the system with payload
+- J: Total rotational moment of inertia [kg·m²] about the CG of the system with payload
+- α: Vertical aerodynamic damping coefficient [N·s/m]
+- β: Rotational aerodynamic damping coefficient [N·m·s/rad]
+- γ: Horizontal aerodynamic damping coefficient [N·s/m]
+- d₁: Distance [m] from the CG to the front control thrust
+- d₂: Distance [m] from the CG to the rear control thrust
+
+\# Problem 1. Equilibrium Thrust Forces
 
 Notice from the x-direction force balance equation that two variables were introduced. These variables are defined as:
 
