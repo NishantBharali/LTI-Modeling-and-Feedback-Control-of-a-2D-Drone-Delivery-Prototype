@@ -1,4 +1,4 @@
-# [ME5554/AOE5754/ECE5754 Applied Linear Systems - Project I]{style="color:rgb(213,80,0)"}
+# ME5554/AOE5754/ECE5754 Applied Linear Systems - Project I
 
 ``` matlab
 clear;
